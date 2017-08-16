@@ -8,7 +8,8 @@ export function getBeers() {
             .then(res => res.json())
             //.then(res => res.results)
             .then(beers =>
-            dispatch(setBeers(beers)));
+            dispatch(setBeers(beers))
+        );
     };
 }
 

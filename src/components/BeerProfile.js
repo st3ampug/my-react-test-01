@@ -6,6 +6,7 @@ const BeerProfile = ({ profile }) =>
         <h1>Beer Profile</h1>
         {profile.name && <p>Name: {profile.name}</p>}
         {profile.tagline && <p>Tagline: {profile.tagline}</p>}
+        {profile.ingredients && <p>Yeast used: {profile.ingredients.yeast}</p>}
         {profile.first_brewed && <p>First Brewed: {profile.first_brewed}</p>}
         {profile.description && <p>Description: {profile.description}</p>}
         {profile.image_url && <img height='250' src={profile.image_url} />}

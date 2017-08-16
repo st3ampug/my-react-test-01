@@ -14,7 +14,7 @@ const store = createStore(reducer, compose(
     window.devToolsExtension ? window.devToolsExtension() : f => f
 ));
 
-store.dispatch(getBeers());
+store.dispatch(getBeers(1)); // << this kicks off the first request, gets 1st page
 // store.dispatch(getCharacters());
 
 require('./index.html');
